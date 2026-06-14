@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Ice Breakers</title>
+    <meta name="description" content="A curated list of remote ice breaker activities for teams.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1><a href="index.html" class="home-link">Remote Ice Breakers</a></h1>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> These activities are widely available from the internet and are intended as suggestions. Please use them with caution and ensure they are appropriate for your team's culture and dynamics.
+        </div>
+
+        <section class="randomizer-section">
+            <div class="randomizer-card">
+                <h2>Not sure where to start?</h2>
+                <p>Click the button below to get a random ice breaker activity!</p>
+                <button id="random-btn" class="btn primary-btn">Generate Random Ice Breaker</button>
+                <div id="random-result" class="random-result hidden">
+                    <h3 id="random-title"></h3>
+                    <p id="random-desc"></p>
+                    <div style="margin-bottom: 20px;">
+                        <span id="random-meta" class="meta-tag"></span>
+                    </div>
+                    <a id="random-link" href="#" class="btn primary-btn" style="display: inline-block; text-decoration: none;">View Activity</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories-container" class="categories-section">
+            <!-- Categories will be injected here via JS -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Remote Ice Breakers. Curated for modern remote teams.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

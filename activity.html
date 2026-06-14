@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Details - Remote Ice Breakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1><a href="index.html" class="home-link">Remote Ice Breakers</a></h1>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container activity-page">
+        <nav class="breadcrumbs">
+            <a href="index.html">Home</a> &gt; 
+            <span id="bc-category">Category</span> &gt; 
+            <strong id="bc-title">Title</strong>
+        </nav>
+
+        <section class="activity-hero">
+            <h2 id="act-title">Loading...</h2>
+            <div class="activity-meta" style="margin: 15px 0;">
+                <span id="act-duration" class="meta-tag"></span>
+                <span id="act-group" class="meta-tag"></span>
+            </div>
+            <p id="act-desc" class="act-desc-main"></p>
+            
+            <div class="act-section">
+                <h3>Why it works</h3>
+                <p id="act-detailed-desc"></p>
+            </div>
+        </section>
+
+        <section class="prompt-section hidden" id="prompt-section">
+            <div class="prompt-card">
+                <h3>Example / Prompt</h3>
+                <div class="prompt-content" id="prompt-content">Click 'Next Example' to see a prompt.</div>
+                <div class="prompt-controls">
+                    <button id="next-prompt-btn" class="btn primary-btn">Show Example</button>
+                    <span id="prompt-counter" class="prompt-counter"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Remote Ice Breakers.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="theme.js"></script>
+    <script src="activity.js"></script>
+</body>
+</html>
